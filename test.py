@@ -1,0 +1,1 @@
+question = input('name: ','age: ')

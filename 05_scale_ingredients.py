@@ -29,9 +29,9 @@ def not_blank(question, error_msg, num_ok):
 
         response = input(question)
         has_errors = ""
-        if num_ok != 'yes':
+        if num_ok == 'yes':
             for letter in response:
-                if letter.isdigit():
+                if letter.isdigit() == True:
                     has_errors = 'yes'
                     break
 
@@ -48,7 +48,7 @@ def not_blank(question, error_msg, num_ok):
 # Main Routine...
 
 # Replace line below with component 3 in due course...
-scale_factor = float(input('Scale Factor: '))
+scale_factor = eval(input('Scale Factor: '))
 
 # Set up empty ingredient list
 ingredients = []
@@ -63,34 +63,32 @@ while stop != 'xxx':
     # break out of loop
     if amount == 'xxx' and len(ingredients) > 1:
         break
-    
-    # If exit code is typed and there are less than 2 ingredients, 
+
+    # If exit code is typed and there are less than 2 ingredients,
     # show error and go back to start of loop
-    elif amount =='xxx' and len(ingredients) < 2:
+    elif amount == 'xxx' and len(ingredients) < 2:
         print('You need at least two ingredients in the list. ',
               'please add more ingredients')
         continue
 
     # Ask user for ingredient (via no blank funcion)
     get_ingredient = not_blank("Please type in an ingredient name: ",
-                                   "this can't be blank",
-                                   "yes")
-    
+                               "this can't be blank or number",
+                               "yes")
+
     amount = float(amount) * scale_factor
-    ingredients.append('{} units {}'.format(amount,get_ingredient))
+    if amount % 1 ==0:
+        amount = int(amount)
+    elif amount * 10 % 1 == 0:
+        amount = "{:.1f}".format(amount)
+    else:
+        amount = "{:.2f}".format(amount)
+    ingredients.append('{} units {}'.format(amount, get_ingredient))
 
-print('Your ingredient list: ',ingredients)
-
-
-
-
-
-
-
-
-
+for item in ingredients:
+    print(item)
 
 
 
 
-# Output list
+

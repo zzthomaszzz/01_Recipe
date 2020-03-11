@@ -8,6 +8,16 @@
 
 
 # function here
+def general_converter(how_much, lookup, dictionary, conversion_factor):
+
+    if lookup in dictionary:
+        mult_by = dictionary.get(unit)
+        how_much = how_much * mult_by * conversion_factor
+
+    return how_much
+
+
+
 def unit_checker():
     unit_tocheck = input("Unit? ")
 
@@ -56,12 +66,9 @@ while keep_going == "":
 
     unit = unit_checker()
 
-    if unit in unit_central:
-        mult_by = unit_central.get(unit)
-        amount = amount * mult_by
-        print("Amount in ml {}".format(amount))
-    else:
-        print("{} is unchanged".format(amount))
+    amount = general_converter(amount, unit, unit_central, 1)
+    print(amount)
+
 
     keep_going = input("<enter> or q")
 

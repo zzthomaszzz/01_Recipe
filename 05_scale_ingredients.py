@@ -65,7 +65,7 @@ while stop != 'xxx':
               'please add more ingredients')
     # if exit code is not entered, add ingredient to list
     else:
-        ''' get_ingredient = not_blank("Please type in an ingredient name: ",
+        '''get_ingredient = not_blank("Please type in an ingredient name: ",
                                    "this can't be blank",
                                    "yes")b'''
         amount = float(amount) * scale_factor

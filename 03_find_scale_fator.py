@@ -17,9 +17,10 @@ def num_check(question):
 
 
 # main route here
+serving_size = num_check('what is the serving size for the recipe ')
 dodgy_sf ='yes'
 while dodgy_sf == 'yes':
-    serving_size = num_check('what is the serving size for the recipe ')
+
     desired_size = num_check('how many serving are needed ')
     scale_factor = desired_size / serving_size
 

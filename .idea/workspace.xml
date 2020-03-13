@@ -23,61 +23,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="06_convertin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06_convertin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02_get_source.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02_get_source.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="09_recipe_morderniser.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="09_recipe_morderniser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/09_recipe_morderniser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="431">
+              <caret line="162" column="16" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
+              <folding>
+                <element signature="e#21#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="09_ingredient_splitter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/09_ingredient_splitter.py">
+      <file leaf-file-name="03_find_scale_fator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03_find_scale_fator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="08_converter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/08_converter.py">
+      <file leaf-file-name="09_ingredient_splitter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/09_ingredient_splitter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="07_to_grams.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/07_to_grams.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            <state relative-caret-position="459">
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -100,7 +72,6 @@
       <list>
         <option value="$PROJECT_DIR$/01b_no_number.py" />
         <option value="$PROJECT_DIR$/01_recipe_name.py" />
-        <option value="$PROJECT_DIR$/03_find_scale_fator.py" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/Fucntion_only.py" />
         <option value="$PROJECT_DIR$/04_ingredients_list.py" />
@@ -109,8 +80,9 @@
         <option value="$PROJECT_DIR$/07_to_grams.py" />
         <option value="$PROJECT_DIR$/06_convertin.py" />
         <option value="$PROJECT_DIR$/08_converter.py" />
-        <option value="$PROJECT_DIR$/09_recipe_morderniser.py" />
         <option value="$PROJECT_DIR$/09_ingredient_splitter.py" />
+        <option value="$PROJECT_DIR$/03_find_scale_fator.py" />
+        <option value="$PROJECT_DIR$/09_recipe_morderniser.py" />
       </list>
     </option>
   </component>
@@ -156,23 +128,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.09_recipe_morderniser">
-    <configuration default="false" name="05_scale_ingredients" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="01_Recipe" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_scale_ingredients.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="06_convertin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,6 +192,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="01_Recipe" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_recipe_morderniser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="09_ingredient_splitter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="01_Recipe" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_ingredient_splitter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -376,19 +348,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.05_scale_ingredients" />
-      <item index="1" class="java.lang.String" itemvalue="Python.06_convertin" />
-      <item index="2" class="java.lang.String" itemvalue="Python.07_to_grams" />
-      <item index="3" class="java.lang.String" itemvalue="Python.08_converter" />
-      <item index="4" class="java.lang.String" itemvalue="Python.09_recipe_morderniser" />
+      <item index="0" class="java.lang.String" itemvalue="Python.06_convertin" />
+      <item index="1" class="java.lang.String" itemvalue="Python.07_to_grams" />
+      <item index="2" class="java.lang.String" itemvalue="Python.08_converter" />
+      <item index="3" class="java.lang.String" itemvalue="Python.09_recipe_morderniser" />
+      <item index="4" class="java.lang.String" itemvalue="Python.09_ingredient_splitter" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.09_recipe_morderniser" />
-        <item index="1" class="java.lang.String" itemvalue="Python.08_converter" />
-        <item index="2" class="java.lang.String" itemvalue="Python.07_to_grams" />
-        <item index="3" class="java.lang.String" itemvalue="Python.06_convertin" />
-        <item index="4" class="java.lang.String" itemvalue="Python.05_scale_ingredients" />
+        <item index="1" class="java.lang.String" itemvalue="Python.09_ingredient_splitter" />
+        <item index="2" class="java.lang.String" itemvalue="Python.08_converter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.07_to_grams" />
+        <item index="4" class="java.lang.String" itemvalue="Python.06_convertin" />
       </list>
     </recent_temporary>
   </component>
@@ -409,7 +381,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.050104383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -503,6 +475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -539,6 +512,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,6 +549,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -611,6 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -640,6 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,6 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -691,6 +669,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,13 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03_find_scale_fator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/06_convertin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -800,19 +772,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_recipe_morderniser.py">
+    <entry file="file://$PROJECT_DIR$/03_find_scale_fator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="170">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/09_ingredient_splitter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="459">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_recipe_morderniser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="162" column="16" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
+          <folding>
+            <element signature="e#21#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

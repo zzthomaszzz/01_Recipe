@@ -13,7 +13,7 @@ def get_all_ingredients():
 
         # Ask user for ingredient (via not blank function)
         get_recipe_line = not_blank("recipe line: ",
-                                    "This can;t be blank",
+                                    "This can't be blank",
                                     "yes")
 
         # Stop looping if exit code is typed and there are more than 2 ingredients...
@@ -26,12 +26,7 @@ def get_all_ingredients():
         else:
             all_ingredients.append(get_recipe_line)
 
-        return all_ingredients
-
-
-
-
-
+    return all_ingredients
 
 
 def not_blank(question, error_msg, num_ok):
@@ -53,6 +48,7 @@ def not_blank(question, error_msg, num_ok):
     else:
         return response
 
+
 def num_check(question):
     error = 'please enter a number that is more than zero'
     valid = False
@@ -65,6 +61,7 @@ def num_check(question):
                 return response
         except ValueError:
             print('please enter a number that is more than zero ')
+
 
 def get_sf():
     serving_size = num_check('what is the serving size for the recipe ')
@@ -89,6 +86,7 @@ def get_sf():
                              "your desired serving size) ").lower()
         else:
             dodgy_sf = 'no'
+
     return scale_factor
 
 
@@ -96,6 +94,7 @@ def get_sf():
 
 
 # set up list to hold 'modernised' ingredients
+modernised_recipe =[]
 
 
 # Ask user for recipe name and check its not blank
@@ -120,6 +119,7 @@ full_recipe = get_all_ingredients()
 # Split each line of the recipe into amount, unit and ingredient...
 mixed_regex = "\d{1,3}\s\d{1,3}\/\d{1,3}"
 
+
 for recipe_line in full_recipe:
     recipe_line = recipe_line.strip()
 
@@ -135,7 +135,7 @@ for recipe_line in full_recipe:
         amount = mixed_num.replace(" ","+")
         # Change the string into a decimal
         amount = eval(amount)
-        print(amount)
+        amount = amount * scale_factor
 
         # Get unit and ingredient...
         compile_regex = re.compile(mixed_regex)
@@ -146,21 +146,32 @@ for recipe_line in full_recipe:
 
         try:
             amount = eval(get_amount[0])  # convert amount to float if possible
+            amount = amount * scale_factor
         except NameError:
             amount = get_amount[0]
-            convert = 'no'
+            modernised_recipe.append(recipe_line)
+            continue
+
 
         unit_ingredient = get_amount[1]
 
     # Get unit and ingredient...
     get_unit = unit_ingredient.split(" ", 1)  # splits text at first space
 
+
     unit = get_unit[0]
     # convert into ml
-    ingredient = get_unit[1]
-    #convert into g
+    num_spaces = recipe_line.count(" ")
+    if num_spaces > 1:
+        ingredient = get_unit[1]
+        # convert into g
+    else:
+        modernised_recipe.append("{} {}".format(amount,unit_ingredient))
+        continue
 
-    print("{} {}")
+    modernised_recipe.append("{} {} {}".format(amount, unit, ingredient))
+    for item in modernised_recipe:
+        print(item)
 
 
 

@@ -3,9 +3,11 @@ import csv
 import re
 
 # ***** Functions ******
-def get_all_ingredients():
-    all_ingredients = []
 
+
+def get_all_ingredients():
+
+    all_ingredients = []
     stop = ''
     print("Please enter ingredients one line at a time. Press 'xxx' to when"
           "you are done.")
@@ -19,7 +21,6 @@ def get_all_ingredients():
         # Stop looping if exit code is typed and there are more than 2 ingredients...
         if get_recipe_line.lower() == "xxx" and len(all_ingredients) > 1:
             break
-
         elif get_recipe_line.lower() == "xxx" and len(all_ingredients) < 2:
             print("You need atleast two ingredients in the list. "
                   "Please add more ingredients.")
@@ -104,9 +105,8 @@ def general_converter(how_much, lookup, dictionary, conversion_factor):
         converted = "no"
     return [how_much, converted]
 
-def unit_checker():
 
-    unit_tocheck = input("Unit? ")
+def unit_checker(unit_tocheck):
 
     # Abbreviation lists
     teaspoon = ["tsp", "teaspoon", "t","teaspoons"]
@@ -141,9 +141,10 @@ def unit_checker():
     elif unit_tocheck.lower() in mls:
         return "mls"
     elif unit_tocheck.lower() in grams:
-        return "mls"
+        return "g"
     else:
         pass
+
 # Main routine
 unit_central = {
     "tsp": 5,
@@ -154,7 +155,8 @@ unit_central = {
     "quart": 946,
     "pound": 454,
     "litre": 1000,
-    "ml": 1
+    "ml": 1,
+    "g": 1
 }
 
 groceries = open('01_ingredients_ml_to_g.csv')
@@ -167,18 +169,11 @@ food_dictionary = {}
 for row in csv_groceries:
     food_dictionary[row[0]] = row[1]
 
-# print(food_dictionary)
-
-
-# set up Dictionaries
-
-
 # set up list to hold 'modernised' ingredients
 modernised_recipe =[]
 
-
 # Ask user for recipe name and check its not blank
-source = not_blank("what is the recipe name? ",
+recipe_name = not_blank("what is the recipe name? ",
                    "The recipe name can't be blank and can't contain numbers,",
                    "no")
 
@@ -190,8 +185,6 @@ source = not_blank("where is the recipe from? ",
 
 # Get serving seizes and scale factor
 scale_factor = get_sf()
-
-
 
 # Get amounts, units and ingredients from user...
 full_recipe = get_all_ingredients()
@@ -227,11 +220,11 @@ for recipe_line in full_recipe:
         try:
             amount = eval(get_amount[0])  # convert amount to float if possible
             amount = amount * scale_factor
+
         except NameError:
             amount = get_amount[0]
             modernised_recipe.append(recipe_line)
             continue
-
 
         unit_ingredient = get_amount[1]
 
@@ -239,14 +232,14 @@ for recipe_line in full_recipe:
     get_unit = unit_ingredient.split(" ", 1)  # splits text at first space
 
 
-    unit = get_unit[0]
     # convert into ml
     num_spaces = recipe_line.count(" ")
+
     if num_spaces > 1:
         # Item has unit and ingredient
         unit = get_unit[0]
         ingredient = get_unit[1]
-        '''unit = unit_checker(unit)'''
+        unit = unit_checker(unit)
 
         # if unit is already in grams, add it to list
         if unit == "g":
@@ -261,17 +254,26 @@ for recipe_line in full_recipe:
 
             # if the ingredient is in the list, convert it
             if amount_2[1] == "yes":
-                modernised_recipe.append("{.0f} g {}".format(amount_2[0], ingredient)) # Rather than printing, update modernised list(g)
+                modernised_recipe.append("{:.0f} g {}".format(amount_2[0], ingredient)) # Rather than printing, update modernised list(g)
 
             # if the ingredient is not in the list, leave the unit as ml
             else:
                 modernised_recipe.append("{.0f} ml {}".format(amount[0], ingredient))
                 continue
+
+        # if it's not in mls, leave it unchanged
+        else:
+            modernised_recipe.append("{:.2f} {} {} ".format(amount[0], unit, ingredient))
+
     else:
         modernised_recipe.append("{} {}".format(amount,unit_ingredient))
-        continue
 
-    modernised_recipe.append("{} {} {}".format(amount, unit, ingredient))
-    for item in modernised_recipe:
-        print(item)
-# Output ingredient list
+
+print()
+print("*****",(recipe_name),"*****")
+print()
+print("source:",source)
+print("Mordernised recipe: ")
+for item in modernised_recipe:
+    print(item)
+
